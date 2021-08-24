@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import HamburgerMenu from "./components/Hamburger-menu";
+import HomePage from "./components/HomePage";
 
 function App() {
 
@@ -8,12 +10,13 @@ function App() {
 
   return (
     <div className="appContainer">
-
-      < HamburgerMenu
-        checkingStatus={status}
-        settingStatus={setStatus}
-      />
-
+      <Router>
+        < HamburgerMenu
+          checkingStatus={status}
+          settingStatus={setStatus}
+        />
+        <Route exact path="/" component={HomePage} />
+      </Router>
     </div>
   );
 }

@@ -29,6 +29,11 @@ nav {
     cursor: pointer;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 
 .burgerMenu-Container {
     display: flex;

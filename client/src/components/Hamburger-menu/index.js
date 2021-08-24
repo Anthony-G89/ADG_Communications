@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const hamburgerMenu = ({ checkingStatus, settingStatus }) => {
 
@@ -8,7 +9,7 @@ const hamburgerMenu = ({ checkingStatus, settingStatus }) => {
 
         <div>
             <nav>
-                <h1 className="companyTitle">ADG Communications</h1>
+                <Link to="/"> <h1 className="companyTitle">ADG Communications</h1></Link>
                 <div className="burgerMenu-Container" onClick={() => settingStatus(!checkingStatus)}>
                     <i className={checkingStatus.toString()}></i>
                     <i className={checkingStatus.toString()}></i>
