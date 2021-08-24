@@ -1,18 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+}
+
+body {
+    overflow-x: hidden;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    /* background-color: lightblue; */
+    justify-content: space-between;
     width: 100%;
-    height: 3em;
-    box-shadow: 2px 7px 10px;
+    height: 6vh;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
+    background-color: lightseagreen;
+}
+
+.companyTitle {
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    font-size: 34px;
+    text-shadow: 1px 2px 11px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 
@@ -36,7 +50,8 @@ i {
 .nav-links-container {
     position: absolute;
     right: 0;
-    background-color: rgb(105, 172, 231);
+    top: 6vh;
+    background-color: rgb(20, 121, 116);
     height: 100%;
     width: 20%;
     display: flex;
@@ -45,6 +60,7 @@ i {
     align-items: center;
     transform: translateX(110%);
     transition: all ease-in-out 600ms;
+    border-radius:  15% 0 0 15%;
 }
 
 .nav-item {
@@ -57,6 +73,12 @@ i {
     text-transform: uppercase;
 }
 
+.nav-item:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Rotations for HAMBURGER-MENU */
 .true:nth-child(1) {
 transform: rotate(45deg)
 translateY(16px);
@@ -80,4 +102,5 @@ translateY(16px);
     transform: rotate(0deg)
     translateY(0);
 }
+/*  */
 
