@@ -16,13 +16,13 @@ const hamburgerMenu = ({ checkingStatus, settingStatus }) => {
                     <i className={checkingStatus.toString()}></i>
                 </div>
             </nav>
-
-            <ul className="nav-links-container" style={{ transform: checkingStatus ? "translateX(0%)" : null }}>
-                <li className="nav-item">Home</li>
-                <li className="nav-item">Support</li>
-                <li className="nav-item">Contact</li>
-            </ul>
-
+            <div className="nav-links-background">
+                <ul className="nav-links-container" style={{ transform: checkingStatus ? "translateY(0%)" : null }}>
+                    <li className="nav-item">Home</li>
+                    <li className="nav-item">Support</li>
+                    <li className="nav-item">Contact</li>
+                </ul>
+            </div>
         </div>
 
     )

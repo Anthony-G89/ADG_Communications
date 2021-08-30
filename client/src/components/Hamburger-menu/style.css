@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -15,9 +14,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 6vh;
+    height: 10vh;
     box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
-    background-color: lightseagreen;
+    background-color: #1976d2;
 }
 
 .companyTitle {
@@ -27,6 +26,7 @@ nav {
     font-size: 34px;
     text-shadow: 1px 2px 11px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    color: #d5caca;
 }
 
 a {
@@ -34,38 +34,46 @@ a {
     text-decoration: none;
 }
 
-
 .burgerMenu-Container {
     display: flex;
     flex-direction: column;
     position: relative;
     right: 5em;
     cursor: pointer;
-    
 }
 
 i {
-    background-color: black;
+    background-color: #d5caca;
     height: 4px;
     width: 32px;
     margin: 3px auto;
-    transition: all ease 400ms; 
+    transition: all ease 400ms;
 }
+
+/* .nav-links-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+} */
 
 .nav-links-container {
     position: absolute;
     right: 0;
-    top: 6vh;
-    background-color: rgb(20, 121, 116);
-    height: 100%;
-    width: 20%;
+    top: 10vh;
+    background-color: #039be5;
+    height: 115%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transform: translateX(110%);
+    transform: translateY(-110%);
     transition: all ease-in-out 600ms;
-    border-radius:  15% 0 0 15%;
+    /* border-radius: 15% 0 0 15%; */
+    z-index: 10;
+    overflow-y: hidden;
 }
 
 .nav-item {
@@ -83,29 +91,34 @@ i {
     text-decoration: underline;
 }
 
+
 /* Rotations for HAMBURGER-MENU */
+
 .true:nth-child(1) {
-transform: rotate(45deg)
-translateY(16px);
+    transform: rotate(45deg) translateY(16px);
+    background-color: red;
 }
+
 .true:nth-child(2) {
     opacity: 0;
 }
+
 .true:nth-child(3) {
-    transform: rotate(-50deg)
-    translateY(-13px);
+    transform: rotate(-50deg) translateY(-13px);
+    background-color: red;
 }
 
 .false:nth-child(1) {
-    transform: rotate(0deg)
-     translateY(0);
+    transform: rotate(0deg) translateY(0);
 }
-.false:nth-child(2) {
-   opacity: 1; 
-}
-.false:nth-child(3) {
-    transform: rotate(0deg)
-    translateY(0);
-}
-/*  */
 
+.false:nth-child(2) {
+    opacity: 1;
+}
+
+.false:nth-child(3) {
+    transform: rotate(0deg) translateY(0);
+}
+
+
+/*  */
