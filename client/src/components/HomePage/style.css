@@ -1,13 +1,18 @@
 .homepageContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .companyQuote {
-    position: absolute;
+    position: relative;
     top: 3em;
     text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #3d3de8, #27051a);
+    background: linear-gradient(to right, #3d3de8, #790a3d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
 }
 
 .homepageImg {
@@ -16,7 +21,8 @@
     border-radius: 5px;
     box-shadow: 2px 5px 11px rgba(0, 0, 0, 0.2);
     width: 500px;
-    height: 100%;
+    height: 640px;
+   
   
 
 }
