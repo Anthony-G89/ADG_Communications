@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const hamburgerMenu = ({ checkingStatus, settingStatus }) => {
+const hamburgerMenu = ({ checkingStatus, settingStatus, closeMenu }) => {
 
 
     return (
@@ -17,9 +17,9 @@ const hamburgerMenu = ({ checkingStatus, settingStatus }) => {
                 </div>
             </nav>
             <ul className="nav-links-container" style={{ transform: checkingStatus ? "translateY(0%)" : null }}>
-                <li className="nav-item">Home</li>
-                <li className="nav-item">Support</li>
-                <li className="nav-item">Contact</li>
+                <Link to="/"> <li className="nav-item" onClick={closeMenu}>Home</li></Link>
+                <li className="nav-item" onClick={closeMenu}>Support</li>
+                <Link to="/contact" onClick={closeMenu}> <li className="nav-item">Contact</li></Link>
             </ul>
 
         </div>

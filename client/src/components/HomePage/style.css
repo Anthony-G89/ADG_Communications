@@ -2,22 +2,29 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    
 }
 
 .companyQuote {
     position: relative;
-    top: 3em;
+    /* top: 3em; */
     text-transform: uppercase;
     background: -webkit-linear-gradient(to right, #3d3de8, #27051a);
     background: linear-gradient(to right, #3d3de8, #790a3d);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
+    text-shadow: 0px 5px 11px rgba(0, 0, 0, 0.3);
 }
 
 .homepageImg {
     position: relative;
-    top: 7em;
+    /* top: 7em; */
     border-radius: 5px;
     box-shadow: 2px 5px 11px rgba(0, 0, 0, 0.2);
     width: 500px;
