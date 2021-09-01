@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 section {
     position: fixed;
     width: 100%;
@@ -5,7 +7,63 @@ section {
     /* background-color: aqua; */
 }
 
-.contactTitle {
+.formWrapper {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #e4e4e4;
+    width: 50%;
+    padding: 21px;
+    height: 560px;
+    border-radius: 5px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subjectLabel {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subjectInput {
+    width: 50%;
+    margin: -5px auto;
+    padding: 5px 0px;
+}
+
+/* input[type="text"] {
+    border: 2px solid purple;
+} */
+
+.DescriptionLabel {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 85px;
+    font-size: 20px;
+}
+
+.submitBtn {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    right: 54px;
+    padding: 6px 22px;
+    font-size: 17px;
+    bottom: 42px;
+    border: none;
+    border-radius: 5px;
+    
+    background-color: rgb(97, 97, 240);
+    color: white;
+    box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: rgb(73, 73, 233);
 }

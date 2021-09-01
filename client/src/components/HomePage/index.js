@@ -10,7 +10,7 @@ const HomePage = () => {
         <>
             <div className="homepageContainer">
                 <h1 data-aos="fade-up-right" className="companyQuote">Connecting your business to the world</h1>
-                <img data-aos="fade-left" className="homepageImg" src={process.env.PUBLIC_URL + "./assets/Background-homepage-img.jpg"} />
+                <img data-aos="fade-left" className="homepageImg" alt="Images of buildings and the sky" src={process.env.PUBLIC_URL + "./assets/Background-homepage-img.jpg"} />
             </div>
 
 
