@@ -18,7 +18,7 @@ const hamburgerMenu = ({ checkingStatus, settingStatus, closeMenu }) => {
             </nav>
             <ul className="nav-links-container" style={{ transform: checkingStatus ? "translateY(0%)" : null }}>
                 <Link to="/"> <li className="nav-item" onClick={closeMenu}>Home</li></Link>
-                <li className="nav-item" onClick={closeMenu}>Support</li>
+                <Link to="/projects"> <li className="nav-item" onClick={closeMenu}>Projects</li></Link>
                 <Link to="/contact" onClick={closeMenu}> <li className="nav-item">Contact</li></Link>
             </ul>
 

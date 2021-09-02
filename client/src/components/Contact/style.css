@@ -17,6 +17,8 @@ section {
     padding: 21px;
     height: 560px;
     border-radius: 5px;
+    margin: 40px auto;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
 .formContainer {
@@ -37,15 +39,19 @@ section {
     padding: 5px 0px;
 }
 
-/* input[type="text"] {
-    border: 2px solid purple;
-} */
+input[type="text"] {
+    padding: 5px;
+}
 
 .DescriptionLabel {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-top: 85px;
     font-size: 20px;
+}
+
+textarea {
+    padding: 10px;
 }
 
 .submitBtn {

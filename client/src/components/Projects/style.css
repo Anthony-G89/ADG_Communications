@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+section {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.projectWrapper{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.projectHeader {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+.projectImages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
