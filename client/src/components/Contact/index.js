@@ -1,12 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 
 
 const Contact = () => {
 
-    const [subject , setSubject] = useState("");
-    const [description , setDescription] = useState("");
+    const [subject, setSubject] = useState("");
+    const [description, setDescription] = useState("");
+
+    function sumbitNote () {
+        alert("message submitted");
+    };
 
 
     return (
@@ -19,7 +23,7 @@ const Contact = () => {
                     <label className="DescriptionLabel" htmlFor="text">Description:</label><br />
                     <textarea style={{ resize: "none" }} rows="12" name="userDescription" onChange={event => setDescription(event.target.value + console.log(event.target.value))} ></textarea>
                 </form>
-                <button className="submitBtn">Submit</button>
+                <button onClick={sumbitNote} className="submitBtn">Submit</button>
             </div>
         </section>
     )
