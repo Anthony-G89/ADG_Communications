@@ -19,7 +19,7 @@ const Contact = () => {
     function sumbitNote() {
 
         if (!subject || !description) {
-            alert("subject & description are empty. Please provide details.");
+            alert("Subject & Description are empty. Please provide details.");
         } else {
             alert("Your message is submitted");
             clearSubject();
