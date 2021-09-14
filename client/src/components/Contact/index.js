@@ -7,16 +7,17 @@ const Contact = () => {
 
     const [subject, setSubject] = useState("");
     const [description, setDescription] = useState("");
-
-
-
     const textSubject = useRef();
     const descriptionInput = useRef();
 
+    // These Functions are clearing my inputs in my form
     const clearSubject = () => (textSubject.current.value = "");
     const clearDescription = () => (descriptionInput.current.value = "");
 
-    function sumbitNote() {
+
+
+    // This function is submitting
+    function submitNote() {
 
         if (!subject || !description) {
             alert("Subject & Description are empty. Please provide details.");
@@ -38,7 +39,7 @@ const Contact = () => {
                     <label className="DescriptionLabel" htmlFor="text">Description:</label><br />
                     <textarea style={{ resize: "none" }} rows="12" name="userDescription" ref={descriptionInput} onChange={event => setDescription(event.target.value)} ></textarea>
                 </form>
-                <button onClick={sumbitNote} className="submitBtn">Submit</button>
+                <button onClick={submitNote} className="submitBtn">Submit</button>
             </div>
         </section>
     )

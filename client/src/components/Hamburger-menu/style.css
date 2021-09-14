@@ -29,7 +29,7 @@ nav {
     font-size: 34px;
     text-shadow: 1px 2px 11px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    color: #d5caca;
+    color: white;
 }
 
 a {
@@ -46,7 +46,7 @@ a {
 }
 
 i {
-    background-color: #d5caca;
+    background-color: white;
     height: 4px;
     width: 32px;
     margin: 3px auto;

@@ -16,6 +16,13 @@ const Projects = () => {
                 <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
                 <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
                 <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
+                <img className="projectImages" src="https://via.placeholder.com/300" alt="placeHolder Container" />
             </div>
         </section>
     )
